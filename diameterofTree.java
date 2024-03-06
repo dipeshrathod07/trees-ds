@@ -1,4 +1,4 @@
-import javax.swing.tree.TreeNode;
+
 
 public class diameterofTree
 {
@@ -46,6 +46,24 @@ public class diameterofTree
         return new Info(diam, ht);
         
     }
+//another way to find diameter// O(N)
+static int m = 0;
+    public static int diameter2(Node root)
+    {
+        if(root == null)
+        {
+            return 0;
+        }
+        int ldiam = diameter2(root.left);
+        int rdiam = diameter2(root.right);
+        
+        m = Math.max(m, ldiam+rdiam+1);
+
+       
+        
+        return Math.max( ldiam,rdiam)+1;
+    }
+
 
     public static void main(String args[])
     {

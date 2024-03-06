@@ -67,50 +67,8 @@ public class BinaryTreeQue
         //     sum(root,N);
         //     return c;
         //  }
-        static int m = 0;
-        public static int diameter2(Node root)
-        {
-            if(root == null)
-            {
-                return 0;
-            }
-            int ldiam = diameter2(root.left);
-            int rdiam = diameter2(root.right);
-            
-            m = Math.max(m, ldiam+rdiam+1);
-
-           
-            
-            return Math.max( ldiam,rdiam)+1;
-        }
-
-        static class Info
-        {
-            int dia,ht;
-            public Info(int dia,int ht)
-            {
-                this.dia = dia;
-                this.ht = ht;
-            }
-
-            
-        }
-        public static Info diameter(Node root)
-        {
-            if(root == null)
-            {
-                return new Info(0, 0);
-            }
-
-            Info leftInfo = diameter(root.left);
-            Info rightInfo = diameter(root.right);
-
-            int diam = Math.max(Math.max(leftInfo.dia, rightInfo.dia),leftInfo.ht+rightInfo.ht+1);
-
-            int height = Math.max(leftInfo.ht ,rightInfo.ht)+1;
-
-            return new Info(diam, height);
-        }
+       
+      
 
         public static void main(String[] args) {
             Node root = new Node(1);
@@ -125,9 +83,7 @@ public class BinaryTreeQue
 
            // System.out.println(subTreesSum(root, 5));
 
-           //System.out.println("The Diameter is :"+diameter(root).dia);
-           diameter2(root);
-           System.out.println(m);
+   
 
            
 
