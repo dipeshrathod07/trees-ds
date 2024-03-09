@@ -83,11 +83,11 @@ public class LowestCommonAncestor {
     // root.right.right = new Node(221);
 
 
-     //   System.out.println(LCA2(root, 5, 4).val);
+       System.out.println(LCA2(root, 5, 4).val);
 
       //  System.out.println(KAncestor(root,221,2));
 
-      KAncestor(root,5,2);
+      
 }
     
 }

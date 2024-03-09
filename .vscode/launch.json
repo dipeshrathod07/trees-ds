@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTree",
+            "request": "launch",
+            "mainClass": "BinaryTree",
+            "projectName": "TreesDS_6e05b004"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeQue$Node",
+            "request": "launch",
+            "mainClass": "BinaryTreeQue$Node",
+            "projectName": "TreesDS_6e05b004"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreesB",
+            "request": "launch",
+            "mainClass": "BinaryTreesB",
+            "projectName": "TreesDS_6e05b004"
+        },
+        {
+            "type": "java",
+            "name": "DistanceBetweenNodes",
+            "request": "launch",
+            "mainClass": "DistanceBetweenNodes",
+            "projectName": "TreesDS_6e05b004"
+        },
+        {
+            "type": "java",
+            "name": "KthAncestorOfTree",
+            "request": "launch",
+            "mainClass": "KthAncestorOfTree",
+            "projectName": "TreesDS_6e05b004"
+        },
+        {
+            "type": "java",
+            "name": "LowestCommonAncestor",
+            "request": "launch",
+            "mainClass": "LowestCommonAncestor",
+            "projectName": "TreesDS_6e05b004"
+        },
+        {
+            "type": "java",
+            "name": "TopView",
+            "request": "launch",
+            "mainClass": "TopView",
+            "projectName": "TreesDS_6e05b004"
+        },
+        {
+            "type": "java",
+            "name": "convertBTtosumBT",
+            "request": "launch",
+            "mainClass": "convertBTtosumBT",
+            "projectName": "TreesDS_6e05b004"
+        },
+        {
+            "type": "java",
+            "name": "diameterofTree",
+            "request": "launch",
+            "mainClass": "diameterofTree",
+            "projectName": "TreesDS_6e05b004"
+        },
+        {
+            "type": "java",
+            "name": "identicalTree",
+            "request": "launch",
+            "mainClass": "identicalTree",
+            "projectName": "TreesDS_6e05b004"
+        }
+    ]
+}

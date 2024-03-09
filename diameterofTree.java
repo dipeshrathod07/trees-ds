@@ -74,8 +74,13 @@ static int m = 0;
         root.right = new Node(3);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
+        root.right.right.right = new Node(9);
+        root.right.right.right.right = new Node(10);
+        root.right.right.left = new Node(8);
 
-        System.out.println("The diameter is:"+diameter(root).dia);
+        //System.out.println("The diameter is:"+diameter(root).dia);
+        diameter2(root);
+        System.out.println(m);
      
     }
     

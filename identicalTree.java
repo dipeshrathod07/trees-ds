@@ -22,16 +22,7 @@ public class identicalTree
             return false;
         }
         
-        if(!isIdentical(node.left, subroot.left))
-        {
-            return false;
-        }
-        if(!isIdentical(node.right,subroot.right))
-        {
-            return false;
-        }
-
-        return true;
+       return isIdentical(node.left, subroot.left) && isIdentical(node.right,subroot.right);
     }
 
     public static boolean isSubtree(Node root,Node subroot)
@@ -63,7 +54,7 @@ public class identicalTree
 
         Node subroot = new Node(2);
         subroot.left = new Node(4);
-        subroot.right = new Node(5);
+        subroot.right = new Node(8);
 
 
         System.out.println(isSubtree(root,subroot));
