@@ -35,7 +35,7 @@ public class BinaryTreesB {
 
             return newNode;
         }
-
+     //preorder Traversal//
         public static void preorder(Node root)
         {
             if(root == null)return;
@@ -47,7 +47,7 @@ public class BinaryTreesB {
             preorder(root.right);
             
         }
-       
+       //Inorder Traversal//
         public static void inorder(Node root)
         {
             if(root ==  null)return;
@@ -57,7 +57,7 @@ public class BinaryTreesB {
             inorder(root.right);
                 
         }
-        
+        //Postorder Travesrsal//
         public static void postorder(Node root)
         {
             if(root == null)return;

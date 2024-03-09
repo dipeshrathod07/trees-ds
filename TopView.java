@@ -1,6 +1,6 @@
 import java.util.*;
 
-import javax.swing.event.TreeExpansionEvent;
+
 
 public class TopView
 {
@@ -15,6 +15,9 @@ public class TopView
             left=right=null;
         }
     }
+
+    //This is information class which contains key=hd , value=node which store in HashMap
+    
     static class Info{
         int hd;
         Node node;
@@ -26,6 +29,7 @@ public class TopView
         }
     }
 
+//TopViewOfTree  method is use to get Node.data from viewing by top side of the tree//
     public static ArrayList<Integer> TopViewOfTree(Node root)
     {
         ArrayList<Integer> list = new ArrayList<>();
@@ -82,11 +86,23 @@ public class TopView
 
     }
         
+//This method is use to find the nodes on kth level
 
-            
-  
+       public static void klevel(Node root,int level,int k)
+       {
+        if(root == null)return;
+
+        if(level == k)
+        {
+            System.out.print(root.val+" ");
+            return;
+        }
+
+        klevel(root.left, level+1, k);
+        klevel(root.right, level+1, k);
 
 
+       }     
     public static void main(String[] args) {
 
   
@@ -98,7 +114,9 @@ public class TopView
             root.right.left = new Node(6);
             root.right.right = new Node(7);
 
+            int k = 2;
 
+            klevel(root, 1, k);
             System.out.println(TopViewOfTree(root));
 
     
